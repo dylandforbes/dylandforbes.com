@@ -1,0 +1,58 @@
+/*  ff-meta-serif-web-pro */
+
+@font-face {
+	font-family: brandon-grotesque;
+	src: url("/static/brandon-grotesque.woff");
+}
+
+body {
+	font-family: brandon-grotesque;
+	font-size: 20px;
+	margin: 0;
+}
+
+#content {
+	margin: 0 50px;
+	border: 20px;
+	border-style: solid;
+	border-color: rgb(219, 219, 219);
+}
+
+header {
+	background-color: #487f93;
+	font-size: 17px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: .18em;
+	text-transform: uppercase;
+}
+
+#dylan_forbes {
+	color: rgb(194, 238, 181);
+}
+
+.header_items {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+.header_item {
+	color: #36e817;
+}
+
+#tabs {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#tabs > .header_item {
+	margin: 0 20px;
+}
+
+main {
+	background-color: rgb(238, 243, 246);
+	height: 100%;
+}
