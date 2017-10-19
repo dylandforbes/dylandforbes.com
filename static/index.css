@@ -5,9 +5,14 @@
 	src: url("/static/brandon-grotesque.woff");
 }
 
+@font-face {
+	font-family: meta-serif-pro;
+	src: url("/static/meta-serif-pro.woff");
+}
+
 body {
-	font-family: brandon-grotesque;
-	font-size: 20px;
+	font-family: meta-serif-pro;
+	font-size: 15px;
 	margin: 0;
 }
 
@@ -16,9 +21,13 @@ body {
 	border: 20px;
 	border-style: solid;
 	border-color: rgb(219, 219, 219);
+	max-width: 1320px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 header {
+	font-family: brandon-grotesque;
 	background-color: #487f93;
 	font-size: 17px;
 	font-weight: 400;
@@ -28,31 +37,43 @@ header {
 }
 
 #dylan_forbes {
-	color: rgb(194, 238, 181);
+	color: #c2eeb5;
 }
 
-.header_items {
+#header_items {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	padding: 20px;
+	justify-content: space-between;
+	padding: 20px 30px;
 }
 
 .header_item {
 	color: #36e817;
+	margin: 0 20px;
+	text-decoration: none;
+	line-height: normal;
 }
 
 #tabs {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
+	font-size: 15px;
+	line-height: 15px;
 }
 
 #tabs > .header_item {
-	margin: 0 20px;
+	transition-property: color;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.17s;
+	transition-delay: 0s;
+}
+
+#tabs > .header_item:hover {
+	color: pink;
 }
 
 main {
+	padding: 50px;
 	background-color: rgb(238, 243, 246);
-	height: 100%;
 }
